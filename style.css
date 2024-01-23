@@ -67,7 +67,8 @@ h1 {
 /* Styling pour les noms des joueurs */
 .tjoueur {
     margin-bottom: 2px;
-    font-size: 50px;
+    font-size: 30px;
+    
 }
 
 /* Styling pour les scores des joueurs */
