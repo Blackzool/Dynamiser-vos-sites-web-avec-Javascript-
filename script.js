@@ -7,8 +7,8 @@ function init() {
     activePlayer = Math.floor(Math.random() * 2) + 1;
     gamePlaying = true;
 
-    document.getElementById('scoreJoueur1').textContent = 'Score: 0';
-    document.getElementById('scoreJoueur2').textContent = 'Score: 0';
+    document.getElementById('scoreJoueur1').textContent = '0';
+    document.getElementById('scoreJoueur2').textContent = '0';
     document.getElementById('mancheJoueur1').textContent = 'Score Manche: 0';
     document.getElementById('mancheJoueur2').textContent = 'Score Manche: 0';
     document.getElementById('resultat').textContent = '';
@@ -52,7 +52,7 @@ document.getElementById('holdButton').addEventListener('click', function() {
         scores[activePlayer - 1] += roundScore;
 
         // Mettre à jour l'UI
-        document.getElementById('scoreJoueur' + activePlayer).textContent = 'Score: ' + scores[activePlayer - 1];
+        document.getElementById('scoreJoueur' + activePlayer).textContent = ' ' + scores[activePlayer - 1];
 
         // Vérifier si le joueur a gagné le jeu
         if (scores[activePlayer - 1] >= 100) {

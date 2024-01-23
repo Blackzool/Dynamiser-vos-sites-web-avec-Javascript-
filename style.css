@@ -42,7 +42,13 @@ button {
     width: 40%;
 }
 
-#scoreJoueur1, #scoreJoueur2, #mancheJoueur1, #mancheJoueur2 {
+.tjoueur {
+    margin-bottom: 2px;
+}
+#scoreJoueur1, #scoreJoueur2 {
+    font-size: 54px;
+}
+#mancheJoueur1, #mancheJoueur2 {
     margin-top: 20px;
     font-size: 18px;
 }
