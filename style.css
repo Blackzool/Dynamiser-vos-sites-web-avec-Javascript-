@@ -27,7 +27,7 @@ header {
 /* Styling pour le titre du jeu */
 h1 {
     color: #8b4513;
-    font-size: 24px; /* Vous pouvez ajuster cela selon vos préférences */
+    font-size: 24px;
 }
 
 /* Styling pour le conteneur du résultat entre les joueurs */
@@ -60,8 +60,8 @@ h1 {
     margin: 10px;
     padding: 10px;
     box-sizing: border-box;
-    height: auto; /* Ajustez pour s'adapter au contenu */
-    width: calc(45% - 20px); /* Ajustez selon vos préférences */
+    height: auto; 
+    width: calc(45% - 20px); 
 }
 
 /* Styling pour les noms des joueurs */
@@ -72,12 +72,12 @@ h1 {
 
 /* Styling pour les scores des joueurs */
 #scoreJoueur1, #scoreJoueur2 {
-    font-size: 70px; /* Ajustez selon vos préférences */
+    font-size: 70px; 
 }
 
 /* Styling pour les scores de manche */
 #mancheJoueur1, #mancheJoueur2 {
-    margin-top: 20px; /* Ajustez selon vos préférences */
+    margin-top: 20px; 
     font-size: 18px;
 }
 
@@ -118,6 +118,6 @@ button {
 
     /* Ajustez la largeur des sections des joueurs pour les écrans plus larges */
     #joueur1, #joueur2 {
-        width: calc(40% - 20px); /* Ajustez selon vos préférences */
+        width: calc(40% - 20px);
     }
 }
