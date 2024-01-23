@@ -21,6 +21,10 @@ button {
     border-radius: 4px;
 }
 
+.buttonde {
+    background-color: #d2b48c;
+}
+
 #deImage {
     width: 100px;
     height: 100px;
@@ -38,10 +42,13 @@ button {
     width: 40%;
 }
 
-#scoreJoueur1, #scoreJoueur2 {
+#scoreJoueur1, #scoreJoueur2, #mancheJoueur1, #mancheJoueur2 {
     margin-top: 20px;
-    font-weight: bold;
     font-size: 18px;
+}
+
+#joueur1.active, #joueur2.active {
+    font-weight: bold;
 }
 
 #resultat {
