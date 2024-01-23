@@ -1,19 +1,108 @@
+/* Réinitialiser certains styles par défaut du navigateur */
 body {
     font-family: 'Lato', sans-serif;
     background-color: #d2b48c;
-    margin: auto;
-    width: 100%;
+    margin: 0;
     text-align: center;
 }
 
-h1 {
-    color: #8b4513;
+/* Styling pour la section principale du jeu */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 100%; /* Utilisez 100% pour s'adapter à la largeur de l'écran */
+    margin: auto;
 }
 
+/* Styling pour l'en-tête */
+header {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Styling pour le titre du jeu */
+h1 {
+    color: #8b4513;
+    font-size: 24px; /* Vous pouvez ajuster cela selon vos préférences */
+}
+
+/* Styling pour le conteneur du résultat entre les joueurs */
+#resultat-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Styling pour le texte du résultat */
+#resultat {
+    color: #4caf50;
+    text-align: center;
+}
+
+/* Styling pour le conteneur des joueurs */
+#joueurs-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Styling pour les sections des joueurs */
+#joueur1, #joueur2 {
+    border: 2px solid #8b4513;
+    background-color: #f4a460;
+    color: #8b4513;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: auto; /* Ajustez pour s'adapter au contenu */
+    width: calc(45% - 20px); /* Ajustez selon vos préférences */
+}
+
+/* Styling pour les noms des joueurs */
+.tjoueur {
+    margin-bottom: 2px;
+    font-size: 50px;
+}
+
+/* Styling pour les scores des joueurs */
+#scoreJoueur1, #scoreJoueur2 {
+    font-size: 70px; /* Ajustez selon vos préférences */
+}
+
+/* Styling pour les scores de manche */
+#mancheJoueur1, #mancheJoueur2 {
+    margin-top: 20px; /* Ajustez selon vos préférences */
+    font-size: 18px;
+}
+
+/* Styling pour indiquer le joueur actif */
+#joueur1.active, #joueur2.active {
+    font-weight: bold;
+}
+
+/* Styling pour la section des boutons (lancer le dé et Hold) */
+.HoldDe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling pour le bouton de dé */
+.buttonde {
+    background-color: #d2b48c;
+    margin-bottom: 10px;
+}
+
+/* Styling pour les boutons généraux */
 button {
     font-size: 16px;
     padding: 10px 20px;
-    margin-top: 20px;
     cursor: pointer;
     background-color: #4caf50;
     color: white;
@@ -21,44 +110,14 @@ button {
     border-radius: 4px;
 }
 
-.buttonde {
-    background-color: #d2b48c;
-}
+/* Media query pour les écrans plus larges */
+@media screen and (min-width: 768px) {
+    main {
+        flex-direction: row;
+    }
 
-#deImage {
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
+    /* Ajustez la largeur des sections des joueurs pour les écrans plus larges */
+    #joueur1, #joueur2 {
+        width: calc(40% - 20px); /* Ajustez selon vos préférences */
+    }
 }
-
-#joueur1, #joueur2 {
-    display: inline-block;
-    border: 2px solid #8b4513;
-    background-color: #f4a460;
-    color: #8b4513;
-    margin-top: 20px;
-    padding: 10px;
-    
-    width: 40%;
-}
-
-.tjoueur {
-    margin-bottom: 2px;
-}
-#scoreJoueur1, #scoreJoueur2 {
-    font-size: 54px;
-}
-#mancheJoueur1, #mancheJoueur2 {
-    margin-top: 20px;
-    font-size: 18px;
-}
-
-#joueur1.active, #joueur2.active {
-    font-weight: bold;
-}
-
-#resultat {
-    color : #4caf50;
-}
-
-
