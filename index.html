@@ -10,23 +10,34 @@
     <title>Jeu Javascript</title>
 </head>
 <body>
-    <div>
-        <h1>Le 100 Script</h1>
-        <h3>Nouvelle partie</h3>
-    </div>
+    <header>
+        <h1>Le 100 Écus</h1>
+        <button id="demarrerButton">Démarrer la partie</button>
+    </header>
     
+    <main>
+        <div id="resultat"></div>
+    
+        <div id="joueur1" class="active">
+            <h2>Joueur 1</h2>
+            <div id="scoreJoueur1">Score: 0</div>
+            <div id="mancheJoueur1">Score Manche: 0</div>
+        </div>
 
-    <div id="joueur1">
-        <h2>Joueur 1</h2>
-        <p>Score global ici</p>
-        <p>Score manche ici</p>
-    </div>
+        <div>
+            <button id="lancerDeDe" class="buttonde">
+                <img src="images/de1.png" width="100px" alt="Dé">
+            </button>
+            <button id="holdButton">Hold</button>
+        </div>
 
-    <div id="joueur2">
-        <h2>Joueur 2</h2>
-        <p>Score global ici</p>
-        <p>Score manche ici</p>
-    </div>
+        <div id="joueur2">
+            <h2>Joueur 2</h2>
+            <div id="scoreJoueur2">Score: 0</div>
+            <div id="mancheJoueur2">Score Manche: 0</div>
+        </div>
+    </main>
+    
     <script src="script.js"></script>
 </body>
 </html>
